@@ -7,8 +7,8 @@ public class Carry : MonoBehaviour
    
     void OnCollisionEnter(Collision col)
     {
-        if (gameObject.CompareTag("Enemy"));
-        Destroy(col.gameObject);
+        if (col.gameObject.CompareTag("Enemy"));
+        Destroy(gameObject);
     }
 
     void 
