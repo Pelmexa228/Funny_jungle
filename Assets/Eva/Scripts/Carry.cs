@@ -7,7 +7,7 @@ public class Carry : MonoBehaviour
    
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Enemy"));
+        if (gameObject.CompareTag("Enemy"));
         Destroy(col.gameObject);
     }
 
@@ -20,6 +20,6 @@ public class Carry : MonoBehaviour
     void OnCollisionExit(Collision col)
     {
         if (col.gameObject.CompareTag("Enemy"));
-        Destroy(col.gameObject);
+        Destroy(gameObject);
     }
     }
